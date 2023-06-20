@@ -1,0 +1,477 @@
+/*=== FARBEN ===*/
+
+/* 
+ * Background: #F8F9FD
+ * Form: #4d68ff42
+ * Swich-Page-Container: #4d67ff
+ * Input: #F2F2F2 
+ */
+
+/*=== FARBEN ===*/
+
+/*=== FONT ===*/
+
+@font-face {
+    font-family: myfont;
+    font-style: normal;
+    src: url(../font/Louis\ George\ Cafe.ttf) format(truetype);
+}
+
+/*=== FONT ===*/
+
+/*=== GENERELLES ===*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont, Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/*=== GENERELLES ===*/
+
+/*=== BODY-CONTAINER ===*/
+
+.flex-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9FD;
+}
+
+/*=== BODY-CONTAINER ===*/
+
+/*=== INNEN-CONTAINER ===*/
+
+.innen-flex-container{
+    width: 80%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+/*=== INNEN-CONTAINER ===*/
+
+/*=== SWITCH-FORMULAR  ===*/
+
+.switch-formular{
+    border: 1px solid black;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d67ff;
+    color: #F8F9FD;
+}
+
+.switch-formular > .welcome{
+    width: 80%;
+    text-align: center;
+}
+
+.switch-formular > .welcome > header{
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.switch-formular > .welcome > p{
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.switch-formular > .welcome > button:visited{
+    background-color: #a2b0ff;
+    color: #000;
+    text-decoration: none;
+}
+
+.switch-formular > .welcome > button{
+    width: 40%;
+    height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    background-color: #a2b0ff;
+    transition: background-color 0.5s;
+}
+
+.switch-formular > .welcome > button:hover,
+.switch-formular > .welcome > button:hover > a{
+    cursor: pointer;
+    background-color: #F8F9FD;
+    transition: background-color 0.5s;
+}
+
+.switch-formular > .welcome > button > a{
+    color: #000;
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.switch-formular > .welcome > button > a:active{
+    color: #000;
+    text-decoration: none;
+}
+
+.switch-formular > .welcome > button > a:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+/*=== SWITCH-FORMULAR  ===*/
+
+/*=== EINGABEFORMULAR  ===*/
+
+.formular{
+    border: 1px solid black;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 50%;
+    height: 100%;
+    background-color: #4d68ff42;
+}
+
+#eingabeformular-registraition,
+#eingabeformular-login{
+    padding: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    font-size: 2rem;
+    padding-left: 0.5rem;
+}
+
+.input-container{
+    width: 100%;
+    height: 6rem;
+    margin-top: 1rem;
+}
+
+.input-container:last-child{
+    height: 2rem;
+}
+
+.input-container > label{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-container label > .material-symbols-outlined{
+    font-size: 2rem;
+}
+
+.input-container input{
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+}
+
+.button{
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.button button{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #F8F9FD;
+    color: #000;
+    transition: background-color 1s, color 0.5s;
+}
+
+.button button:hover,
+.button button:hover{
+    cursor: pointer;
+    background-color: #4d67ff;
+    color: #F8F9FD;
+    transition: background-color 1s, color 0.5s;
+}
+
+
+
+.foot-container{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foot-container > span:first-child{
+    margin-left: 1rem;
+}
+
+.foot-container > span:hover{
+    border-bottom: 2px solid #4d67ff;
+    cursor: pointer;
+}
+
+.passwort-container{
+    position: relative;
+}
+
+.passwort-container > .material-symbols-outlined{
+    position: absolute;
+    top: 13px;
+    right: 5%;
+}
+
+.passwort-container > .material-symbols-outlined:hover{
+    cursor: pointer;
+}
+
+/*=== EINGABEFORMULAR  ===*/
+
+/*=== RESPONSIV  ===*/
+
+@media (max-width: 900px){
+    .innen-flex-container{
+        flex-direction: column;
+        width: 90%;
+        height: 95%;
+    }
+
+    .input-container{
+        width: 100%;
+        height: 6rem;
+        margin-top: 0.5rem;
+    }
+
+    .button{
+        height: 3rem;
+        margin-top: 2rem;
+    }
+
+    .input-container input{
+        height: 2.5rem;
+    }
+
+    .passwort-container > .material-symbols-outlined{
+        position: absolute;
+        top: 9px;
+        right: 5%;
+    }
+
+    .switch-formular,
+    .formular{
+        width: 100%;
+    }
+
+    .switch-formular{
+        height: 30%;
+    }
+
+    .formular{
+        height: 70%;
+        padding: 1rem;
+        border-radius: 0;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    #eingabeformular-registraition,
+    #eingabeformular-login{
+        padding: 0rem;
+    }
+
+    .foot-container > span{
+        font-size: 1rem;
+    }
+
+    .foot-container > span:first-child{
+        margin-left: 0.3rem;
+        text-align: left;
+    }
+
+    .switch-formular{
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .switch-formular > .welcome > header{
+        font-size: 2rem;
+    }
+
+    .input-container input{
+        width: 100%;
+    }
+
+    .switch-formular > .welcome > button{
+        width: 60%;
+    }
+}
+
+@media (max-height: 500px){
+    .innen-flex-container{
+        flex-direction: row;
+        width: 90%;
+        height: 90%;
+    }
+
+    .formular{
+        overflow-y: scroll;
+        height: 100%;
+        border-radius: 0;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .input-container:last-child::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2rem;
+    }
+
+    .switch-formular{
+        height: 100%;
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+}
+
+/*=== RESPONSIV  ===*/
+
+/*=== DELETE  ===*/
+
+.delete{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000081;
+}
+
+.delete > #delete_account{
+    width: 50%;
+    height: 65%;
+    background-color: #F8F9FD;
+    margin: 0 auto;
+    margin-top: 13%;
+    padding: 2rem;
+    border: 3px solid #4d67ff;
+}
+
+.auswahl{
+    font-size: 1.5rem;
+    width: 70%;
+    height: 12rem;
+    margin: 0 auto;
+}
+
+.auswahl > span{
+    background-color: #4d67ff;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.auswahl > span:hover{
+    cursor: pointer;
+}
+
+.auswahl > span > #button{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+.auswahl > .option{
+    overflow-y: scroll;
+    height: 0%;
+}
+
+.auswahl > .option_anzeigen{
+    height: 80%;
+}
+
+.auswahl > .option::-webkit-scrollbar{
+    width: 0px;
+}
+
+.auswahl > .option > li{
+    padding: 0.5rem;
+    background-color: #4d67ff;
+    border: 1px solid black;
+}
+
+.auswahl > .option > li:hover{
+    cursor: pointer;
+    background-color: #a2b0ff;
+}
+
+#delete_account button{
+    background-color: #4d67ff;
+}
+
+#delete_account button:hover{
+    background-color: #a2b0ff;
+}
+
+@media (max-width:900px){
+    .delete > #delete_account{
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .auswahl{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-height:500px){
+    .delete > #delete_account{
+        overflow-y: scroll;
+        margin-top: 4%;
+        height: 80%;
+    }
+
+    .delete > #delete_account::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+/*=== DELETE  ===*/

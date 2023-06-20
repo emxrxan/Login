@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registraition</title>
+        <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+
+    <body>
+
+        <!--Body-Container-->
+
+        <div class="flex-container">
+
+            <!--Innen-Container-Registration-->
+
+            <div class="innen-flex-container">
+
+                <!--Switch Page-->
+
+                <div class="switch-formular">
+                    
+                    <div class="welcome">
+                        <header>Registration</header>
+                        <p>Already have an account?</p>
+                        <button><a href="./index.html">Sign In</a></button>
+                    </div>
+
+                </div>
+
+                <!--Switch Page-->
+
+                <!--FORMULAR-->
+
+                <div class="formular">
+
+                    <form action="#" method="post" id="eingabeformular-registraition">
+                        <header>Sign Up</header>
+
+                        <div class="input-container">
+                            <label for="first_name" title="Name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" form="eingabeformular-registraition" placeholder="Name" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="last_name" title="Name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" form="eingabeformular-registraition" placeholder="Name" required>
+                        </div>
+
+
+                        <div class="input-container">
+                            <label for="user" title="Username">
+                                <span class="material-symbols-outlined">person</span>
+                                USERNAME
+                            </label>
+                            <input type="text" id="user" name="user" form="eingabeformular-registraition" placeholder="Username" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="check_password" title="Passwort">
+                                <span class="material-symbols-outlined">lock</span>
+                                PASSWORD
+                            </label>
+                            <div class="passwort-container">
+                                <input type="password" id="check_password" name="password" form="eingabeformular-registraition" placeholder="Passwort" required>
+                                <span class="material-symbols-outlined">visibility</span>
+                            </div>
+                        </div>
+
+                        <div class="input-container button">
+                            <button type="submit" form="eingabeformular-registraition">Sign Up</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!--FORMULAR-->
+
+            </div>
+
+            <!--Innen-Container-Registration-->
+
+        </div>
+
+        <!--Body-Container-->
+        
+        <!--JS-SCRIPT-->
+
+        <script src="./src/js/anzeigen.js" defer></script>
+        <script src="./src/js/Registraition.js" defer></script>
+        <script src="./src/js/Login.js" defer></script>
+        <script src="./src/js/main.js" defer></script>
+
+        <!--JS-SCRIPT-->
+
+    </body>
+
+</html>
