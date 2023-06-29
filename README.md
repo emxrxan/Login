@@ -2,7 +2,7 @@
 
 <h3>About</h3>
 <p align="left">
-  Dies ist eine Login Seite. Man muss sich zunächst ein Account zulegen. Daraufhin wird man nach einem erfolgreichem Login weitergeleitet.
+  Dies ist eine Login Seite. Man muss sich zunächst ein Account zulegen. Daraufhin wird man nach einem erfolgreichem Login auf der Login-Page weitergeleitet.
 </p>
 
 <h3 align="left">Gearbeitet mit folgenden Programmiersprachen:</h3>
